@@ -10,6 +10,6 @@ deployment "production" {
     region              = "eu-central-1"
     role_arn            = "arn:aws:iam::156494581097:role/tfc-role"
     identity_token_file = identity_token.aws.jwt_filename
-    default_tags      = { stacks-preview-example = "lambda-api-gateway-stack" }
+    # default_tags      = { stacks-preview-example = "lambda-api-gateway-stack" }
   }
 }
