@@ -9,7 +9,7 @@ variable "identity_token_file" {
   type = string
 }
 
-variable "TFC_AWS_RUN_ROLE_ARN" {
+variable "role_arn" {
   type = string
 }
 

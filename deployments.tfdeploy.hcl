@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 identity_token "aws" {
-  audience = [var.oidc_audience]
+  audience = ["aws.workload.identity"]
 }
 
 deployment "production" {
