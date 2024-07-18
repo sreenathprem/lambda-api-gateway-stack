@@ -12,3 +12,11 @@ deployment "production-de" {
     identity_token_file = identity_token.aws.jwt_filename
   }
 }
+
+deployment "production-us" {
+  variables = {
+    region              = "us-east-1"
+    role_arn            = "arn:aws:iam::156494581097:role/tfc-role"
+    identity_token_file = identity_token.aws.jwt_filename
+  }
+}
